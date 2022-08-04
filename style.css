@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@100;300&family=Ubuntu&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@100;300&display=swap');*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Heebo', sans-serif;
+}
+body{
+	width: 100%;
+	display: grid;
+	overflow-x: hidden;
+}
+header{
+	width: 100%;
+	height: 70px;
+	background: #3b464c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav-bar{
+	height: 90%;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav-items{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 50px;
+}
+.nav-items li {
+	color: white;
+	font-weight: 1000;
+	transition: 0.4s all;
+}
+.nav-items li:hover{
+	color: #f39f39;
+}
+.logo{
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 20px;
+	background: #f39f39;
+}
+/*-----------------------------*/
+.a-div{
+	height: 600px;
+	width: 100%;
+	background: #3b464c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 50px;
+	flex-direction: row;
+}
+.bg-img{
+	height: 600px;
+	width: 100%;
+	background-image: url(bg5.png);
+	background-size: 75%;
+	background-position: center;
+	background-repeat: repeat-x;
+	opacity: 0.2;
+	position: absolute;
+}
+.left-div{
+	height: 500px;
+	width: 600px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	grid-gap: 30px;
+	z-index: 6;
+}
+.right-div{
+	height: 500px;
+	width: 500px;
+	background-image: url(delivery.png);
+	z-index: 4;
+	background-size: cover;
+}
+.text{
+	font-size: 60px;
+	color: white;
+	font-weight: 1000;
+	line-height: 60px;
+	letter-spacing: 3px;
+	font-family: 'Ubuntu', sans-serif;
+	animation: dj 1s linear;
+}
+
+.ro-text{
+	font-family: 'Ubuntu', sans-serif;
+	color: whitesmoke;
+	font-size: 17px;
+	text-align-last: left;
+	line-height: 20px;
+	width: 500px;
+}
+.add-dalo{
+	height: 45px;
+	width: 100%;
+	display: flex;
+	grid-gap: 10px;
+}
+.address{
+	width: 450px;
+	border-radius: 10px;
+	background: white;
+	border: none;
+	color: black;
+	font-size: 15px;
+	padding: 20px;
+}
+.go{
+	height: 100%;
+	width: 100px;
+	background: #f39f39;
+	border: none;
+	color: white;
+	font-size: 20px;
+	border-radius: 10px;
+	transition: 0.3s all;
+	cursor: pointer;
+}
+.go:hover{
+	background: #fcba6a;
+}
+/*------------------------------------*/
+.b-div{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	grid-gap: 50px;
+}
+.b-right-box{
+	height: 400px;
+	width: 500px;
+	display: flex;
+	padding: 25px;
+	grid-gap: 15px;
+		flex-direction: column;
+}
+.b-text{
+	font-size: 35px;
+}
+.b-ro-text{
+	color: #f39f39;
+}
+.call{
+	height: 50px;
+	width: 100px;
+	border-radius: 5px;
+	background: #f39f39;
+	text-align-last: center;
+	padding: 15px;
+	color: white;
+	transition: 0.4s all;
+}
+.call:hover{
+	background: #fcba6a;
+}
+.b-left-box{
+	height: 400px;
+	width: 400px;
+	background-image: url(od.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*-----------------------------------------------*/
+.c-div{
+	height: 600px;
+	width: 100%;
+	text-align-last: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	grid-gap: 100px;
+}
+.c-text{
+	font-size: 40px;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+.c-ro-text{
+	color: dimgray;
+}
+.c-items-div{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	grid-gap: 50px;
+}
+.c-del-box{
+	height: 350px;
+	width: 350px;
+	background: #f0efe6;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 20px;
+	text-align-last: center;
+	padding: 25px;
+}
+.c-del-box:hover{
+	box-shadow: 0 0 100px pink;
+}
+.c-img{
+	height: 150px;
+	width: 150px;
+	background-image: url(food.png);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -100px;
+}
+.two{
+	background-image: url(box.png);
+	background-size: 70%;
+	/*margin-top: -130px;*/
+}
+.three{
+	background-image: url(gro.png);
+	background-size: 80%;
+	/*margin-top: -150px;*/
+}
+.order-now{
+	height: 50px;
+	width: 100px;
+	background: #f39f39;
+	color: white;
+	padding: 13px;
+	border-radius: 5px;
+	font-size: 15px;
+	transition: 0.3s all;
+}
+.order-now:hover{
+	background: #fcba6a;
+}
+.c-del-ro-text{
+	padding: 5px;
+	color: dimgray;
+	text-align-last: left;
+}
+/*-------------------------------------------------*/
+.d-div{
+	height: 600px;
+	width: 100%;
+	display: flex;
+	background: #3b464c;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	grid-gap: 150px;
+	padding: 50px;
+	border-top-left-radius: 40%;
+	border-top-right-radius: 40%;
+}
+.d-text{
+	font-size: 40px;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+.d-del-text{
+}
+.d-items-div{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	grid-gap: 50px;
+}
+.d-del-box{
+	height: 300px;
+	width: 360px;
+	background: #253138;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	grid-gap: 20px;
+	padding: 25px;
+}
+.d-img{
+	height: 100px;
+	width: 100px;
+	background: #e1ecb8;
+	background-image: url(cycle.png);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5px;
+	margin-top: -100px;	
+}
+.bike{
+	background-image: url(bike.png);
+	background-size: 80%;
+}
+.pickup{
+	background-image: url(truk.png);
+	background-size: 80%;
+}
+.order-now{
+	height: 50px;
+	width: 100px;
+	background: #f39f39;
+	color: white;
+	padding: 13px;
+	border-radius: 5px;
+	font-size: 15px;
+	transition: 0.3s all;
+}
+.order-now:hover{
+	background: #fcba6a;
+}
+.c-del-ro-text{
+	padding: 5px;
+	color: dimgray;
+	text-align-last: left;
+}
+/*-----------------------------------------------*/
+.e-div{
+	height: 500px;
+	width: 100%;
+	background: #253138;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	grid-gap: 40px;
+	text-align-last: center;
+	padding: 100px;
+	border-bottom-left-radius: 40%;
+	border-bottom-right-radius: 40%;
+}
+.e-text{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 35px;
+	color: white;
+	line-height: 40px;
+}
+.learn{
+	height: 60px;
+	width: 130px;
+	background: #f39f39;
+	color: white;
+	font-size: 16px;
+	padding: 17px;
+	border-radius: 5px;
+	transition: 0.3s all;
+}
+.learn:hover{
+	background: #fcba6a;
+}
+/*----------------------------------------------*/
+.f-div{
+	height: 400px;
+	width: 100%;
+	background: white;
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	grid-gap: 10px;
+}
+.f-box{
+	height: 300px;
+	width: 300px;
+	margin-top: -200px;
+	color: black;
+	text-align-last: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	grid-gap: 20px;
+	padding: 10px;
+	/*background: red;*/
+}
+.f-img{
+	height: 250px;
+	width: 250px;
+	background-image: url(air-delivery.png);
+	background-size: cover;
+	margin-top: -100px;
+}
+.first{
+	background-image: url(handshake.png);
+}
+.second{
+	background-image: url(medical-shield.png);
+}
+.third{
+	background-image: url(business-person-showing-thumbs-up-hand-gesture.png);
+}
+.f-text{
+	font-weight: 300;
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;	
+}
+.f-ro-text{
+	color: dimgray;
+	text-align-last: center;
+	font-size: 15px;
+}
+/*-------------------------------------------*/
+.z-div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: black;
+	padding: 10px;
+}
+.z-div-a{
+	height: 300px;
+	width: 100%;
+	background: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	font-family: 'Ubuntu', sans-serif;
+	/*background: #3b464c;*/
+	grid-gap: 200px;
+}
+.z-box{
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+}
+.z-box li{
+	color: dimgray;
+	transition: 0.4s all;
+}
+.z-box li:hover{
+	color: orange;
+}
+.z-social-box{
+	display: flex;
+	flex-direction: column;
+	grid-gap: 20px;
+}
+.social-icons{
+	display: flex;
+	flex-direction: row;
+	grid-gap: 10px;
+}
+.social-icons i{
+	font-size: 30px;
+	transition: 0.5s all;	
+	color: white;
+}
+.social-icons i:hover{
+	transform: rotate(360deg);
+	color: orange;
+}
+.copyright{
+	color: white;
+}
